@@ -36,6 +36,7 @@ Set up the bot
 
 ## Special thanks for creating the bot
 Thanos - <a href="https://discordapp.com/users/307056401941790720" target="_blank">Discord</a>, <a href="https://github.com/anonymous33rus" target="_blank">GitHub</a>
+<br>
 Linux - <a href="https://discordapp.com/users/368447033465503744" target="_blank">Discord</a>
 
 The code is for informational purposes only. If you need any help, please contact me on <a href="https://discordapp.com/users/416812391003586571" target="_blank">Discord</a> or <a href="https://t.me/nulls18" target="_blank">Telegram</a>
