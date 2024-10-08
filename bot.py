@@ -5,7 +5,7 @@ import os
 import sys
 from datetime import datetime, timedelta
 from discord.ext import commands, tasks
-from config import DATABASE_CONFIG, LEVELS_DATABASE_CONFIG, AUTH_DATABASE_CONFIG, BOT_TOKEN, CHANNEL_IDS, CHANNEL_IDS1, ADMIN_CHANNEL_ID, BOT_CHANNEL_ID, ALLOWED_CHANNEL_ID
+from config import DATABASE_CONFIG, LEVELS_DATABASE_CONFIG, AUTH_DATABASE_CONFIG, BOT_TOKEN, CHANNEL_IDS, CHANNEL_IDS1, ADMIN_CHANNEL_ID, BOT_CHANNEL_ID, ALLOWED_CHANNEL_ID, VOTE_SERVER_ID
 from config import class_names, race_names, class_images, race_images
 
 ####################Подключение к базам##################
@@ -520,7 +520,9 @@ async def vote(ctx):
     cursor.execute("UPDATE users SET coins = coins + 5 WHERE user_id = %s", (user_id,))  # Начисляем 5 монет
     connection.commit()
 
-    button = discord.ui.Button(label="Проголосовать здесь!", url="https://wow.mmotop.ru/servers/33773", style=discord.ButtonStyle.link)
+    voting_url = f"https://wow.mmotop.ru/servers/{VOTE_SERVER_ID}"
+
+    button = discord.ui.Button(label="Проголосовать здесь!", url=voting_url, style=discord.ButtonStyle.link)
     
     view = discord.ui.View()
     view.add_item(button)
