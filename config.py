@@ -25,35 +25,6 @@ AUTH_DATABASE_CONFIG = {
 }
 #########################################################
 
-####################Подключение к базам##################
-def get_db_connection():
-    connection = mysql.connector.connect(
-        host=DATABASE_CONFIG['host'],
-        user=DATABASE_CONFIG['user'],
-        password=DATABASE_CONFIG['password'],
-        database=DATABASE_CONFIG['database']
-    )
-    return connection
-
-def get_levels_db_connection():
-    connection = mysql.connector.connect(
-        host=LEVELS_DATABASE_CONFIG['host'],
-        user=LEVELS_DATABASE_CONFIG['user'],
-        password=LEVELS_DATABASE_CONFIG['password'],
-        database=LEVELS_DATABASE_CONFIG['database']
-    )
-    return connection
-
-def get_auth_db_connection():
-    connection = mysql.connector.connect(
-        host=AUTH_DATABASE_CONFIG['host'],
-        user=AUTH_DATABASE_CONFIG['user'],
-        password=AUTH_DATABASE_CONFIG['password'],
-        database=AUTH_DATABASE_CONFIG['database']
-    )
-    return connection
-#########################################################
-
 ####################Настройка############################
 BOT_TOKEN = 'MTA1ODE0Mjg1OTg5MjYyOTUzNQ.GMTYjO.8JCNoRg0JJbw4gw_d9sIppE8DWRI995oM2g1U0'  # ТОКЕН
 CHANNEL_IDS = [1037300019952373773, 1089650230162636992]  # Каналы спамов для первого сообщения, можно добавлять
