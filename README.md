@@ -12,7 +12,7 @@ Set up the bot
 - Launch the bot
 
 ## Commands
-Commands related to the game server
+Commands related to the game server:<br>
 _!bind <account>_ - Links your Discord account to your WoW account<br>
 _!checkbind_ - Checks which WoW account your Discord account is linked to<br>
 _!unbind_ - Unlinks your Discord account from your WoW account<br>
@@ -25,14 +25,14 @@ _!online_ - Displays the current number of online players on the server<br>
 _!gm_ - Show admin characters who are online<br>
 _!uptime_ - Shows the server uptime<br>
 
-Discord account related commands
+Discord account related commands:<br>
 _!account_ - Sends information about the user's account status<br>
 _!top_ - TOP 5 server participants<br>
 _!info_ - Information about the bot<br>
 _!cmd_ - Displays information about available commands<br>
 _!ping_ - Bot latency check<br>
 
-Commands for admin in Discord
+Commands for admin in Discord:<br>
 _!promt @role @user_ - Assigns a role to a user<br>
 _!coins @user +-quantity_ - Adds or removes coins from the user<br>
 _!level @user +-quantity_ - Increases or decreases the user's level<br>
