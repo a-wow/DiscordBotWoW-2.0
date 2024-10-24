@@ -3,7 +3,7 @@
 ## The bot is written in Python 3.12.7
 Install libraries
 - pip install discord.py
-- pip install discord.py
+- pip install mysql-connector-python
 - pip install aiohttp
 
 Set up the bot
